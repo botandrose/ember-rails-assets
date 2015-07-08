@@ -26,6 +26,10 @@ Ember: Require `ember-rails-assets` anywhere, then use the `asset-path` helper i
 
 This will output `<img src="/assets/logo.png" />` in development, and `<img src="/assets/logo-a7f68910d32291ed6470a764a2e59465.png" />` in production.
 
+## Requirements
+
+This gem supports Rails 4.x and up. A PR to support Rails 3.x would be greatly appreciated.
+
 ## Contributing
 
 1. Fork it ( https://github.com/botandrose/ember-rails-assets/fork )
