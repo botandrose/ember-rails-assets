@@ -14,6 +14,7 @@ module Ember
           end
           @body.close if @body.respond_to?(:close)
 
+          response.headers.delete("Content-Length") # some downstream middleware will recalculate
           response.finish
         end
 
