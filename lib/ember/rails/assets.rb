@@ -8,7 +8,7 @@ module Ember
       class Engine < ::Rails::Engine
         initializer "ember-rails-assets.helper" do |app|
           config.after_initialize do
-            ApplicationController.helper Ember::Rails::Assets::Helper
+            ::ApplicationController.helper Ember::Rails::Assets::Helper
           end
         end
 
